@@ -66,10 +66,16 @@ let firm = {
         depart: "Marketing",
     }
 }
-//Replace of Key
-// const {type:origin, name:firmName, div:Divison} = firm;
-// console.log(firm);
 
-//Replace of value
+//Replace of Key
 const {type:origin, name:firmName, div:Divison} = firm;
 console.log(firm);
+
+//Replace of value
+const {Divison: {depart: "Admin"}} = firm;
+console.log(depart);
+
+//Add of Key&Value
+
+// const {type:origin, name:firmName, div:Divison} = firm;
+// console.log(firm);
