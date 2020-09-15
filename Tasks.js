@@ -2,7 +2,7 @@
 
 // 1. Save an object in local storage and get the object and print individual key-value
 // 2. Save an object in session storage and get the object and print individual key-value
-// 3. How to do nested destructuring on an object and replace the value of a nested object key 
+// 3. How to do nested destructuring on an object and replace the value of a nested object key
 // 4. How to spread an object and change the value of the nested object while spreading an object
 
 // Task 1  Local Storage
@@ -21,9 +21,7 @@
 
 // localStorage.clear();
 
-
 // =======xx=======
-
 
 //Task 2 Session Storage
 
@@ -38,11 +36,10 @@
 
 // sessionStorage.clear();
 
-
 //Task 3
 // nested destructuring object and replace the value of a nested object key
 
-// nested destructuring object 
+// nested destructuring object
 
 // let firm = {
 //         type: "Pharmaceutical",
@@ -59,23 +56,24 @@
 // replace the value of a nested object key
 
 let firm = {
-    type: "Pharmaceutical",
-    name: "SIND MEDICAL STORES",
-    div: {
-        divID: "Vaccine",
-        depart: "Marketing",
-    }
-}
+  type: "Pharmaceutical",
+  name: "SIND MEDICAL STORES",
+  div: {
+    divID: "Vaccine",
+    depart: "Marketing",
+  },
+};
 
-//Replace of Key
-const {type:origin, name:firmName, div:Divison} = firm;
-console.log(firm);
+// const {div: {divID, depart: {depart="Admin"}}} = firm;
+// console.log(depart);
 
-//Replace of value
-const {Divison: {depart: "Admin"}} = firm;
-console.log(depart);
+//Task 4
+// Spread an object and change the value of the nested object while spreading an object
 
-//Add of Key&Value
+const firm2 = {
+  ...firm,
 
-// const {type:origin, name:firmName, div:Divison} = firm;
-// console.log(firm);
+  div: { divID: "Vaccine", depart: "Admin" },
+};
+
+console.log(firm2);
