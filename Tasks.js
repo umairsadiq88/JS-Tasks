@@ -70,10 +70,37 @@ let firm = {
 //Task 4
 // Spread an object and change the value of the nested object while spreading an object
 
-const firm2 = {
-  ...firm,
+// const firm2 = {
+//   ...firm,
 
-  div: { divID: "Vaccine", depart: "Admin" },
+//   div: { divID: "Vaccine", depart: "Admin" },
+// };
+
+// console.log(firm2);
+
+let myObj = {
+  name: "Muhammad Umair",
+  city: "khi",
+  address: {
+    address: 1,
+  },
 };
 
-console.log(firm2);
+let objectKeys = Object.objectKeys(myObj);
+
+console.log(objectKeys);
+
+console.log(myObj[objectKeys[1]]);
+
+for (let index = 0; index < objectKeys.length; index++) {
+  console.log(myObj[objectKeys[index]]);
+}
+
+
+//Topic 
+
+// ObjectDot assign 
+// object.keys 
+// object.value
+// rest operators
+// objectDotassign
