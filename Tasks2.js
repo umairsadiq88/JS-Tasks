@@ -97,21 +97,42 @@
 
 
 
-29 Sep 2020 sir Usama
+// 29 Sep 2020 sir Usama
 
-Chapters
+// Chapters
 
-1) Async 
-2)  
-3)  
+// 1) Async callback
+// 2) Promise (Pending, Resolve or Reject) with example
+// sir usama git link : https://github.com/xamQrexii/async-javascript
 
-Tasks
-1) 
+// "behos hotey reh gaye bus...."
 
-Remaining topics
+// 3) fetch from server
+// reference via video: https://www.youtube.com/watch?v=PoRJizFvM7s&t=1293s 
 
-1) this
-2) classes
-3) default value
-4) promises (how to make promises)
-5) reduce (if sir need )
+
+// Tasks 
+// 1) Promise.all
+// 2) async await
+
+// Remaining topics
+// 1) async await
+// 2) classes
+// 3) default value
+// 4) reduce (if sir need )
+
+
+
+
+// Here is a quick example of Callback:
+
+// function greeting(name) {
+//   alert('Hello ' + name);
+// }
+
+// function processUserInput(callback) {
+//   var name = prompt('Please enter your name.');
+//   callback(name);
+// }
+
+// processUserInput(greeting);
