@@ -87,10 +87,31 @@
 // 4) in a function, in strict mode this is undefined.
 
 
-const iterable = [10,20,30];
-let sum = 0;
-for(let value of iterable){
-    sum += value
-    console.log('sum in loop', sum)
-}
-console.log(sum)
+// const iterable = [10,20,30];
+// let sum = 0;
+// for(let value of iterable){
+//     sum += value
+//     console.log('sum in loop', sum)
+// }
+// console.log(sum)
+
+
+
+29 Sep 2020 sir Usama
+
+Chapters
+
+1) Async 
+2)  
+3)  
+
+Tasks
+1) 
+
+Remaining topics
+
+1) this
+2) classes
+3) default value
+4) promises (how to make promises)
+5) reduce (if sir need )
