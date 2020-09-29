@@ -73,3 +73,12 @@
 // 2) in regular functions refer to global object.
 // 3) in a method, this ref3ers to the owner object.
 // 4) in a function, in strict mode this is undefined.
+
+
+const iterable = [10,20,30];
+let sum = 0;
+for(let value of iterable){
+    sum += value
+    console.log('sum in loop', sum)
+}
+console.log(sum)
