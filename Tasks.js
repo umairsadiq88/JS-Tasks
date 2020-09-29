@@ -99,8 +99,8 @@ for (let index = 0; index < objectKeys.length; index++) {
 
 //Topic 
 
-// ObjectDot assign 
-// object.keys 
-// object.value
-// rest operators
-// objectDotassign
+ObjectDot assign 
+object.keys 
+object.value
+rest operators
+objectDotassign

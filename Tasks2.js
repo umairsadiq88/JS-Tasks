@@ -23,6 +23,18 @@
 //     console.log(objectKeys[i]);
 // }
 
+// 19 Sep 2020
+// Chapters
+
+// 1) try & catch
+
+// 2) for of Loop 
+
+// 3) for in Loop 
+
+// 4) MAP
+
+// 5) filter
 
 
 
