@@ -49,37 +49,43 @@
 // Promise.all([promise1, promise2, promise3, promise4]).then((values) => console.log(values))
 
 
+// API
+// 1: 2s student roll not
+// 2: 2s 2nd name and age
+// 3: 2s gender
 
 
-const getRollNo = () => {
-    setTimeout(() => {
-    console.log('gettingRollNo');
+//exector
+//promise produce
+const pobj1 = new Promise ( (resolve, reject) => {
+    
+    setTimeout( () => {
     let roll_no = [1,2,3,4,5];
-    console.log(roll_no)
+    resolve(roll_no);
+    // reject('Error while communicating')
+    }, 2000);
 
-    setTimeout((rollno) => {
-        const biodata = {
-            name : 'umair',
-            age : 32
-        }    
-    console.log(
-        `my roll no is ${rollno} 
-         my name is ${biodata.name} 
-         and i m ${biodata.age} years old`);
-                
-        setTimeout( (name) => {
-            biodata.gender = 'male';
+} );
 
-            console.log(
-                `my roll no is ${rollno} 
-                 my name is ${biodata.name} 
-                 and i m ${biodata.age} years old and 
-                 i am a ${biodata.gender}`);
-        }, 2000, biodata.name);
-    },2000, roll_no[1]);
+const getBiodata = (indexdata) => {
+    return new Promise ((resolve, reject) => {
+        setTimeout( (indexdata) => {
+            let biodata = {
+                name : 'umair',
+                age : 32
+            }
+            resolve( `My roll No is ${indexdata}, My name is ${biodata.name} and i am ${biodata.age} years old.` );
+        }, 2000, indexdata)
+    }); 
+}
 
+//promise consume
 
-  }, 2000);
-};
-
-getRollNo();
+pobj1.then((rollno) =>{
+    console.log(rollno);
+    getBiodata(rollno[1]).then( (kuchbhi) => {
+        console.log(kuchbhi);
+    })
+}) .catch((error) => {
+    console.log(error)
+});
