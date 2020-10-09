@@ -1,17 +1,17 @@
 
 // //Async/Await
 
-// There's a special syntax to work with promises in a more comfortable fashion
+There's a special syntax to work with promises in a more comfortable fashion
 
-// called "async/await". it's surprisingly easy to understand and use.
+called "async/await". it's surprisingly easy to understand and use.
 
-// The word"asyn" before a function means one simple thing: a function always returns a Promise.
+The word"asyn" before a function means one simple thing: a function always returns a Promise.
 
-// so the async keyword is added to functions to tell them to return a promise rather than directly returning the value
+so the async keyword is added to functions to tell them to return a promise rather than directly returning the value
 
-// we can use await when calling any function that returns a Promise, including web API functions. 
+we can use await when calling any function that returns a Promise, including web API functions. 
 
-// The keyword await makes Javascript wait unitil that mrpose settles and returns.API its result.
+The keyword await makes Javascript wait unitil that mrpose settles and returns.API its result.
 
 
 

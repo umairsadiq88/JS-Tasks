@@ -136,3 +136,30 @@
 // }
 
 // processUserInput(greeting);
+
+
+// 02 Oct 2020 Sir Usama
+
+// Chapters
+
+// 1) async await with try catch 
+// Zindagi phir gulzar hogai..
+
+// 2) classes
+// tip: https://www.w3schools.com/js/js_object_classes.asp 
+
+
+// Tasks 
+// 1) async await ki madad sey user data get karna hai
+// link: jsonplaceholder
+// code: from sir 
+
+// 2) in classes statics kisi method k sath is tamal karsaktey hai 
+// 2) car color change with method k sath property change
+
+
+// Remaining topics
+
+// Default values
+
+

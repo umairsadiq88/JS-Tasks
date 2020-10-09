@@ -28,9 +28,11 @@
 // },2000);
 
 
-// createPost({ title: 'Post Three', body: 'This is Post Three'})
-//     .then(getPosts)
-//     .catch(err => console.log(err));
+createPost({ title: 'Post Three', body: 'This is Post Three'})
+    .then(getPosts)
+    .catch(err => console.log(err));
+
+
 
 // Async / Await
 
